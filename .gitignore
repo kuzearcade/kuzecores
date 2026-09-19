@@ -1,5 +1,8 @@
+# Local build artifacts only.
+#
+# Do NOT ignore db.json.zip or downloader_*.ini/.zip here: the database builder
+# creates those and runs `git add` on them when it publishes the `db` branch,
+# and `git add` of an ignored path exits non-zero, which fails the workflow.
+# (Learned the hard way: the first published build failed on exactly that.)
 db.json
-db.json.zip
-downloader_*.ini
-downloader_*.zip
 __pycache__/
