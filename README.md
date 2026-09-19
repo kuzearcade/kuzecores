@@ -37,20 +37,29 @@ Then run *update* or *update_all* as usual.
   the NMK16 family: four bitstreams (Macross2, Gunnail, Raphero, Afega)
   covering 97 sets, 31 parents and 66 alternatives.
 
-## How it is built, and why there are no game files here
+## How it is built
 
-This repository holds **no `.rbf` or `.mra` files of its own**. Every entry in
-`external_files.csv` points at the file in the core's own repository, pinned to
-a commit, which the downloader fetches directly.
+The two kinds of file are handled differently, because the database builder
+forces the split:
 
-That choice is deliberate:
+- **`.mra` files live in this repository**, under `_Arcade/`. They have to:
+  the builder opens every `.mra` it lists and reads `<rbf>`, `<setname>` and
+  the ROM zip names out of it to tag the entry, so an `.mra` that exists only
+  as a URL fails the build outright. All 97 of them come to 640 KB of text.
+- **`.rbf` files do not.** They are listed in `external_files.csv`, pointing
+  at the bitstream in the core's own repository, **pinned to a commit**.
+  Nothing reads their content, so they need not be duplicated here, which
+  keeps 17 MB of bitstream per release out of this repository while the
+  downloader still delivers it to the SD card.
 
-- The cores stay in one place. A release is published once, in its own
-  repository, and does not have to be copied here to reach anyone.
-- A recorded size and MD5 stay valid forever. Pinning to a **commit** rather
-  than a branch is the point: a branch URL would turn every recorded hash into
-  a future mismatch the moment that core is rebuilt.
-- Adding a core is one entry in `CORES` in `tools/update_external_files.py`.
+Pinning to a *commit* rather than a branch is the point of the `.rbf` half: a
+branch URL would turn every recorded size and MD5 into a future mismatch the
+moment that core is rebuilt.
+
+Adding a core is one entry in `CORES` in `tools/update_external_files.py`.
+
+`tools/update_external_files.py` does both halves: it copies the `.mra` files
+in (removing any that disappeared upstream) and rewrites `external_files.csv`.
 
 `.github/workflows/build_db.yml` runs
 [theypsilon's DB template builder](https://github.com/theypsilon/DB-Template_MiSTer)
@@ -58,6 +67,10 @@ on every push to `main`, which writes `db.json.zip` and the drop-in `.ini` to
 the `db` branch. `FINDER_IGNORE` keeps this repository's own `tools/` directory
 out of the database; `README.md`, `LICENSE` and `.github/` are excluded by the
 builder itself.
+
+The result was built and checked locally before first publication: 101 files
+and 26 folders, and the official `downloader_test.py` fetched all four
+bitstreams from their pinned URLs.
 
 ## Updating after a core release
 
