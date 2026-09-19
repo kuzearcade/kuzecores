@@ -1,0 +1,5 @@
+db.json
+db.json.zip
+downloader_*.ini
+downloader_*.zip
+__pycache__/

@@ -1,0 +1,29 @@
+name: Build Custom Database
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  # The database pins each core's files to a commit, so it does not go stale on
+  # its own. This weekly run only re-publishes the db branch, which keeps the
+  # drop-in .ini and db.json.zip fresh if the template ever changes.
+  schedule:
+    - cron: '0 6 * * 1'
+
+permissions: write-all
+
+jobs:
+  build_db:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Build Custom Database for MiSTer Downloader
+      run: set -o pipefail && curl --fail --location https://raw.githubusercontent.com/theypsilon/Downloader_DB-Template_MiSTer/main/.github/build_db.py | python3 -
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # This repository holds no game files of its own: every entry comes from
+        # external_files.csv, which points at each core's own release files in
+        # its own repository. tools/ is this repo's maintenance script and must
+        # not be mirrored onto anyone's SD card.
+        FINDER_IGNORE: ./tools
