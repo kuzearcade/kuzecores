@@ -36,6 +36,9 @@ Then run *update* or *update_all* as usual.
 - [Arcade-NMK16_MiSTer](https://github.com/kuzearcade/Arcade-NMK16_MiSTer) —
   the NMK16 family: four bitstreams (Macross2, Gunnail, Raphero, Afega)
   covering 97 sets, 31 parents and 66 alternatives.
+- [Arcade-SandScrp_MiSTer](https://github.com/kuzearcade/Arcade-SandScrp_MiSTer) —
+  Sand Scorpion (FACE, 1992) on Kaneko VIEW2 / PANDORA / CALC1 hardware: one
+  bitstream covering all three sets, the parent and two alternatives.
 
 ## How it is built
 

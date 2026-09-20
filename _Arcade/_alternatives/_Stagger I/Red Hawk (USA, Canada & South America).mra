@@ -10,7 +10,7 @@
   tools/gen_gunnail_mra.py.
 -->
 <misterromdescription>
-  <name>Red Hawk (USA, Canada & South America)</name>
+  <name>Red Hawk (USA, Canada &amp; South America)</name>
   <mratimestamp>202609110000</mratimestamp>
   <mameversion>0270</mameversion>
   <setname>redhawk</setname>

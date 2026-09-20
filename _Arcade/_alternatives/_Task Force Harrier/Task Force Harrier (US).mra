@@ -31,7 +31,7 @@
     <dip bits="8" name="Cabinet" ids="Cocktail,Upright"/>
     <dip bits="9" name="Unknown (SW1:7)" ids="On,Off"/>
     <dip bits="10,11" name="Difficulty" ids="Hardest,Easy,Hard,Normal"/>
-    <dip bits="12,13" name="Bonus Life" ids="200k 500k & 1 2 3 5 Mil,None,200k and 1 Mil,200k"/>
+    <dip bits="12,13" name="Bonus Life" ids="200k 500k &amp; 1 2 3 5 Mil,None,200k and 1 Mil,200k"/>
     <dip bits="14,15" name="Lives" ids="5,2,4,3"/>
   </switches>
 

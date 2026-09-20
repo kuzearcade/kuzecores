@@ -10,7 +10,7 @@
   tools/gen_gunnail_mra.py.
 -->
 <misterromdescription>
-  <name>Red Hawk (China & Hong Kong)</name>
+  <name>Red Hawk (China &amp; Hong Kong)</name>
   <mratimestamp>202609110000</mratimestamp>
   <mameversion>0270</mameversion>
   <setname>redhawkc</setname>

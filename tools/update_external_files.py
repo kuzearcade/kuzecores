@@ -49,7 +49,13 @@ CORES = [
     {
         'repo': 'kuzearcade/Arcade-NMK16_MiSTer',
         'branch': 'master',
-        'commit': 'ef92781eea05f962b6ec84c42d2959d064423dbe',
+        'commit': '08b52adce3c63f4bf4f7c5e788a2133695526cd1',
+        'source': 'releases/',
+    },
+    {
+        'repo': 'kuzearcade/Arcade-SandScrp_MiSTer',
+        'branch': 'main',
+        'commit': '5fea840b3dc7fe1f9425c87f13084212f57c3fda',
         'source': 'releases/',
     },
 ]
