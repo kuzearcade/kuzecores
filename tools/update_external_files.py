@@ -64,6 +64,12 @@ CORES = [
         'commit': '244c43148775603cc970de9434ff04ada91deae2',
         'source': 'releases/',
     },
+    {
+        'repo': 'kuzearcade/Arcade-JalecoMS1Z_MiSTer',
+        'branch': 'main',
+        'commit': 'c422cb120bf98772f08ba0750fc5df007b904ba6',
+        'source': 'releases/',
+    },
 ]
 
 

@@ -39,6 +39,12 @@ Then run *update* or *update_all* as usual.
 - [Arcade-SandScrp_MiSTer](https://github.com/kuzearcade/Arcade-SandScrp_MiSTer) —
   Sand Scorpion (FACE, 1992) on Kaneko VIEW2 / PANDORA / CALC1 hardware: one
   bitstream covering all three sets, the parent and two alternatives.
+- [Arcade-JalecoMS1BCD_MiSTer](https://github.com/kuzearcade/Arcade-JalecoMS1BCD_MiSTer) —
+  Jaleco Mega System 1 types B, C and D: one bitstream covering 16 sets,
+  eight parents and eight alternatives.
+- [Arcade-JalecoMS1Z_MiSTer](https://github.com/kuzearcade/Arcade-JalecoMS1Z_MiSTer) —
+  Jaleco Mega System 1 type Z (Legend of Makai): one bitstream covering both
+  sets, the parent and one alternative.
 
 ## How it is built
 
