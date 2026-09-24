@@ -45,6 +45,9 @@ Then run *update* or *update_all* as usual.
 - [Arcade-JalecoMS1Z_MiSTer](https://github.com/kuzearcade/Arcade-JalecoMS1Z_MiSTer) —
   Jaleco Mega System 1 type Z (Legend of Makai): one bitstream covering both
   sets, the parent and one alternative.
+- [Arcade-NMKBP964_MiSTer](https://github.com/kuzearcade/Arcade-NMKBP964_MiSTer) —
+  the Banpresto BP964A / BP965A board: one bitstream for Macross Plus and
+  Quiz Bishoujo Senshi Sailor Moon, two parents.
 
 ## How it is built
 
