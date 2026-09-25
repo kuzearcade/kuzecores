@@ -48,6 +48,9 @@ Then run *update* or *update_all* as usual.
 - [Arcade-NMKBP964_MiSTer](https://github.com/kuzearcade/Arcade-NMKBP964_MiSTer) —
   the Banpresto BP964A / BP965A board: one bitstream for Macross Plus and
   Quiz Bishoujo Senshi Sailor Moon, two parents.
+- [Arcade-GingaNin_MiSTer](https://github.com/kuzearcade/Arcade-GingaNin_MiSTer) —
+  Ginga Ninkyouden (Jaleco, 1987): one bitstream covering both sets, the
+  parent and one alternative.
 
 ## How it is built
 

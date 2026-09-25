@@ -75,6 +75,12 @@ CORES = [
         'commit': '5f5ac44181a8b5edc20bd516885c6b958a8ac16b',
         'source': 'releases/',
     },
+    {
+        'repo': 'kuzearcade/Arcade-GingaNin_MiSTer',
+        'branch': 'main',
+        'commit': '24cdb917776970b317bbccbaf643058919d6c61d',
+        'source': 'releases/',
+    },
 ]
 
 
