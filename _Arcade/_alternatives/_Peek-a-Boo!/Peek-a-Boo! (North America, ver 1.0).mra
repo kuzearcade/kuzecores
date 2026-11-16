@@ -22,7 +22,7 @@
   <category>Arcade</category>
   <rbf>JalecoMS1BCD</rbf>
 
-  <switches default="FF,FF,72">
+  <switches default="FF,FF,12">
     <dip bits="0,1" name="Difficulty" ids="Easy,Hardest,Hard,Normal"/>
     <dip bits="2" name="Service Mode" ids="On,Off"/>
     <dip bits="3" name="Movement" ids="Buttons,Paddles"/>

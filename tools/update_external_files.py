@@ -61,7 +61,7 @@ CORES = [
     {
         'repo': 'kuzearcade/Arcade-JalecoMS1BCD_MiSTer',
         'branch': 'main',
-        'commit': '29250ed70b1ed1bb52c258994cf67bed686584e6',
+        'commit': '65f53535c2a5884a958d2e0e90939028bb44faea',
         'source': 'releases/',
     },
     {
