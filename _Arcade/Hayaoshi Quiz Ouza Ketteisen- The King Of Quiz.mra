@@ -10,7 +10,8 @@
   <switches> byte 2 is not a DIP: it is the game-mode byte, read at RUN TIME
   only (never during the ROM stream — index 254 arrives last). Bits 1:0 mode
   B/C/D, bit 4 sample clock 2 MHz, bits 6:5 protection (0 MCU, 1 simulated,
-  2 none, 3 System D's own).
+  2 none, 3 System D's own). A simulated set carries its command table as
+  <rom index="2">.
 -->
 <misterromdescription>
   <name>Hayaoshi Quiz Ouza Ketteisen: The King Of Quiz</name>
@@ -69,5 +70,12 @@
        data in the bitstream?" stays an easy question. -->
   <rom index="1" zip="hayaosi1.zip" md5="none">
     <part crc="c69423d6" name="pr-91044"/>
+  </rom>
+
+  <!-- Simulated protection: the command table, MAME ip_select_w
+       order SYSTEM P1 P2 DSW1 DSW2 0x0d 0x06, then a mask of which
+       exist. MS1-75. -->
+  <rom index="2" md5="none">
+    <part>51 52 53 54 55 FC 06 7F</part>
   </rom>
 </misterromdescription>

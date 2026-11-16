@@ -10,7 +10,8 @@
   <switches> byte 2 is not a DIP: it is the game-mode byte, read at RUN TIME
   only (never during the ROM stream — index 254 arrives last). Bits 1:0 mode
   B/C/D, bit 4 sample clock 2 MHz, bits 6:5 protection (0 MCU, 1 simulated,
-  2 none, 3 System D's own).
+  2 none, 3 System D's own). A simulated set carries its command table as
+  <rom index="2">.
 -->
 <misterromdescription>
   <name>E.D.F.: Earth Defense Force (set 3)</name>
