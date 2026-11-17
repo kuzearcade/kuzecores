@@ -55,13 +55,13 @@ CORES = [
     {
         'repo': 'kuzearcade/Arcade-SandScrp_MiSTer',
         'branch': 'main',
-        'commit': '70515d59c5093dc58797dc9cb01f4d2788f504a2',
+        'commit': '9ae8269b38a732743e486eabe8721b9490ed798f',
         'source': 'releases/',
     },
     {
         'repo': 'kuzearcade/Arcade-JalecoMS1BCD_MiSTer',
         'branch': 'main',
-        'commit': '57cda5e35f1e695b07df6e48378a70c31747c3b2',
+        'commit': '911058fd979e2f54ca948b9b0845fd82547cb3b8',
         'source': 'releases/',
     },
     {
