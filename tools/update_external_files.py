@@ -55,7 +55,7 @@ CORES = [
     {
         'repo': 'kuzearcade/Arcade-SandScrp_MiSTer',
         'branch': 'main',
-        'commit': 'b2507ed23d3f8c14ea110c3f35b19c5eb6b7127d',
+        'commit': '70515d59c5093dc58797dc9cb01f4d2788f504a2',
         'source': 'releases/',
     },
     {
